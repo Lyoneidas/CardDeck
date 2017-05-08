@@ -50,5 +50,7 @@ Some researchers have concluded that the seven magic number is wrong [2] after i
 
 ## REFERENCES
 [1] Kolata, Gina. "In shuffling cards, seven is winning number." New York Times (1990).
+
 [2] Mann, Brad. "How many times should you shuffle a deck of cards." Topics in Contemporary Probability and Its Applications 15 (1995): 1-33.
+
 [3] Bayer, Dave, and Persi Diaconis. "Trailing the dovetail shuffle to its lair." The Annals of Applied Probability (1992): 294-313.
