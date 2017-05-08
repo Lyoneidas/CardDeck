@@ -82,6 +82,7 @@
                     <descriptorRefs>
                         <descriptorRef>jar-with-dependencies</descriptorRef>
                     </descriptorRefs>
+                    <finalName>CardDeck</finalName>
                     <archive>
                         <manifest>
                             <mainClass>main.Application</mainClass>
