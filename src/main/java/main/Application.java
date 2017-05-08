@@ -1,3 +1,5 @@
+package main;
+
 import org.apache.commons.cli.*;
 
 import static utils.Utilities.isInteger;
@@ -39,6 +41,16 @@ public class Application {
         }
 
         String fileSource = cmd.getOptionValue("ReadFile");
+
+        String rounds = cmd.getOptionValue("ShuffleRound");
+        Integer round = 0;
+        if(isInteger(rounds)){
+            round = Integer.valueOf(rounds);
+        }
+
+        System.out.println(a);
+        System.out.println(fileSource);
+        System.out.println(round);
 
     }
 }

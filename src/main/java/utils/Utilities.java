@@ -64,12 +64,11 @@ public abstract class Utilities {
         return true;
     }
 
-    public void readCSV(String path){
+    public static Integer[] readCSV(String path){
         String csvFile = path;
-
         CSVReader reader = null;
+        List<Integer> row = new LinkedList<>();
         try {
-            List<Integer> row = new LinkedList<>();
             reader = new CSVReader(new FileReader(csvFile));
             String[] line;
             while ((line = reader.readNext()) != null) {
@@ -84,7 +83,7 @@ public abstract class Utilities {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
+        return row.toArray(new Integer[row.size()]);
     }
 }
 

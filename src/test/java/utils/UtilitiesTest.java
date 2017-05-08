@@ -38,4 +38,10 @@ public class UtilitiesTest {
     public void testGetCutPositions(){
         assertThat(getCutPositions(new Integer[]{1,1,0,0,0}),is(new Integer[]{3,2}));
     }
+
+    @Test
+    public void testReadCSV(){
+        String path = "src/test/resources/testReadFile.csv";
+        assertThat(Utilities.readCSV(path),is(new Integer[]{1,2,3,4,5,6}));
+    }
 }

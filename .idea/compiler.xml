@@ -9,7 +9,7 @@
         <module name="CardDeck" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
+    <bytecodeTargetLevel target="1.8">
       <module name="CardDeck" target="1.8" />
     </bytecodeTargetLevel>
   </component>
