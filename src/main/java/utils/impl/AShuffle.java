@@ -7,6 +7,7 @@ import utils.interf.Shuffle;
 import java.util.*;
 
 import static utils.Constants.DEFAULT_A_VALUE;
+import static utils.Constants.DEFAULT_SHUFFLE_ROUNDS;
 import static utils.Utilities.getCutPositions;
 import static utils.Utilities.getUniqueCount;
 
@@ -15,6 +16,12 @@ public class AShuffle implements Shuffle {
     private Integer a = DEFAULT_A_VALUE;
     private static boolean manualInput = false;
     private Integer[] sequence = new Integer[]{};
+
+    private Integer shuffleRounds = DEFAULT_SHUFFLE_ROUNDS;
+
+    public void setShuffleRounds(Integer rounds) {
+        this.shuffleRounds = rounds;
+    }
 
     private AShuffle() {
     }
@@ -35,6 +42,13 @@ public class AShuffle implements Shuffle {
     }
 
     public Integer[] shuffle(Integer[] origin) throws ShuffleException {
+        for (int roundCount = 0; roundCount < shuffleRounds; roundCount++) {
+            origin = singleShuffle(origin);
+        }
+        return origin;
+    }
+
+    private Integer[] singleShuffle(Integer[] origin) throws ShuffleException {
         Integer[] result = new Integer[origin.length];
         if (origin.length < 1) {
             return result;

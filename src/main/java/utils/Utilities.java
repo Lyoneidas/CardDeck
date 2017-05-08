@@ -4,7 +4,9 @@ import com.google.common.collect.LinkedListMultimap;
 import com.google.common.collect.ListMultimap;
 import com.opencsv.CSVReader;
 
+import java.io.BufferedWriter;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.*;
 
@@ -84,6 +86,18 @@ public abstract class Utilities {
             e.printStackTrace();
         }
         return row.toArray(new Integer[row.size()]);
+    }
+
+    public static void writeToCSV(Integer[] array,String outputDirectory) throws IOException {
+        BufferedWriter br = new BufferedWriter(new FileWriter(outputDirectory));
+        StringBuilder sb = new StringBuilder();
+        for (Integer element : array) {
+            sb.append(element);
+            sb.append(",");
+        }
+
+        br.write(String.valueOf(sb.subSequence(0,sb.length()-1)));
+        br.close();
     }
 }
 

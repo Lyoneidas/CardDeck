@@ -7,6 +7,7 @@ import utils.exception.ShuffleException;
 import utils.impl.AShuffle;
 import utils.interf.Shuffle;
 
+import java.io.IOException;
 import java.util.Arrays;
 
 import static org.hamcrest.CoreMatchers.is;
@@ -43,5 +44,12 @@ public class UtilitiesTest {
     public void testReadCSV(){
         String path = "src/test/resources/testReadFile.csv";
         assertThat(Utilities.readCSV(path),is(new Integer[]{1,2,3,4,5,6}));
+    }
+
+    @Test
+    public void testWriteToCSV() throws IOException {
+        String path = "src/test/resources/testWriteFile.csv";
+        Utilities.writeToCSV(new Integer[]{1,2,3},path);
+        assertThat(readCSV(path),is(new Integer[]{1,2,3}));
     }
 }

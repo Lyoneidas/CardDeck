@@ -35,7 +35,7 @@ public class AShuffleTest {
     public static Collection testCriteria(){
         return Arrays.asList(new Object[][]{
                 {new Integer[]{}, new Integer[]{}},
-                {new Integer[]{1,2,3,4,5,6,7,8}, new Integer[]{5,6,1,2,8,4,3,7}}
+                {new Integer[]{1,2,3,4,5,6,7,8}, new Integer[]{8,2,5,4,7,6,1,3}}
         });
     }
 

@@ -36,7 +36,7 @@ public class RiffleShuffleTest {
     public static Collection testCriteria(){
         return Arrays.asList(new Object[][]{
                 {new Integer[]{}, new Integer[]{}},
-                {new Integer[]{1,2,3,4,5,6},new Integer[]{4,5,6,1,2,3}},
+                {new Integer[]{1,2,3,4,5,6},new Integer[]{1,2,3,4,5,6}},
         });
     }
 
