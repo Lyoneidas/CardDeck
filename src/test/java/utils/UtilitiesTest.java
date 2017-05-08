@@ -3,9 +3,6 @@ package utils;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
-import utils.exception.ShuffleException;
-import utils.impl.AShuffle;
-import utils.interf.Shuffle;
 
 import java.io.IOException;
 import java.util.Arrays;

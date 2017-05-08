@@ -1,6 +1,5 @@
 package main;
 
-import com.sun.org.apache.xpath.internal.SourceTree;
 import org.apache.commons.cli.*;
 import utils.Utilities;
 import utils.exception.ShuffleException;
@@ -19,7 +18,7 @@ public class Application {
     public static void main(String[] args) {
         Options options = new Options();
 
-        ArgumentSetup(options);
+        argumentSetup(options);
 
         CommandLineParser parser = new DefaultParser();
         HelpFormatter formatter = new HelpFormatter();
@@ -81,7 +80,7 @@ public class Application {
         return a;
     }
 
-    private static void ArgumentSetup(Options options) {
+    private static void argumentSetup(Options options) {
         Option arguA = new Option("a", "ArgumentA", true, "The argument A for A Shuffle");
         arguA.setRequired(false);
         options.addOption(arguA);
