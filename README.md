@@ -16,6 +16,30 @@ I simplify the quiz by setting the following boundaries:
 1. The card we are using is one set of standard poker, which is consisted of 52 different cards without the jokers.
 2. We use 1-52 to indicate these cards.
 
+## Environment
+
+Language: Java 1.8 x64
+Build tool: Maven
+OS: Windows 10
+
+## Usage
+
+1. Run the CardDeck.jar with command line: 
+   $java -jar CardDeck.jar 
+        -a <optional: Integer, argument a for A shuffle, default=2> 
+        -rf <mandatory: String, directory to the input> 
+        -sr <optional: Integer, shuffle round numbers, default value=12> 
+        -o <mandatory: String, output directory for the results>
+   Example:
+   $java -jar CardDeck.jar -a 6 -rf ./test.csv -sr 11 -o ./re sult.csv
+   
+The application will get inputs from test.csv in the same directory, and the output will be in both command line output and result.csv file. The arguement A of A shuffle will be 6 and the shuffle will repeat 11 times, which will be explained in the following writeups.
+
+2. Input format:
+  A comma seperated sequence consisted of pure integers between 1-52.
+  Example:test.csv
+  1,2,3,4,5,6,7,8,9,10,11,12 
+
 ## Design
 
 Input: a comma seperated sequence with numbers 1-52. The size of the sequence should be between 0 and 52.
