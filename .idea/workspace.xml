@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="be127ae7-8f90-4f7a-bde6-1a0e25e378fe" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/CardDeck-1.0-SNAPSHOT-jar-with-dependencies.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/testReadFile.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/testWriteFile.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/utils/UtilitiesTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/utils/impl/AShuffleBasicMethodTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/utils/impl/AShuffleTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/utils/impl/RiffleShuffleTest.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-    </list>
+    <list default="true" id="be127ae7-8f90-4f7a-bde6-1a0e25e378fe" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
