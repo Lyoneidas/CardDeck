@@ -63,6 +63,9 @@ public abstract class Utilities {
         } catch(NullPointerException e) {
             return false;
         }
+        if(Integer.valueOf(s)>52 | Integer.valueOf(s)<1){
+            return false;
+        }
         return true;
     }
 
